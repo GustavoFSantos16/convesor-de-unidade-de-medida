@@ -1,15 +1,178 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conversor de medidas</title>
 </head>
+
 <body style="background-color: #f0f0f0;">
+    <h1>Conversor de unidade de medida 🧮</h1>
+
+    <!-- add link interno para selecionar a unidade de medida -->
+    <p><strong>Escolha a grandeza: </strong></p>
+    <ul>
+        <li>Ir para <a href="#comprimento">Comprimento (m)</a>;</li>
+        <li>Ir para <a href="#tempo">Tempo (s)</a>;</li>
+        <li>Ir para <a href="#massa">Massa (kg)</a>;</li>
+        <li>Ir para <a href="#temperatura">Temperatura (K)</a>.</li>
+    </ul>
+    <hr>
+
+    <!-- Espaço pois não sei dividir páginas -->
+    <br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br>
+    <!-- Campo de comprimento -->
+    <h2 id="comprimento">Comprimento 📏</h2>
+    <p>Nesse campo é possível converter as unidades de medida da grandeza <strong>COMPRIMENTO</strong></p>
+    <a href="#top">Voltar ao topo!</a><br><br>
+
+
+    <!-- Formulário de comprimento -->
     <form action="sistema.php" method="post">
-        <label for=""></label>
+
+
+        <label for="comprimento1">Vamos converter de </label>
+        <select name="comprimento1" id="comprimento1">
+            <option value="">Selecione uma unidade</option>
+            <option value="cm">Centímetros</option>
+            <option value="m">Metros</option>
+            <option value="km">Quilômetros</option>
+        </select>
+        <label for="comprimento2"> para </label>
+        <select name="comprimento2" id="comprimento2">
+            <option value="">Selecione uma unidade</option>
+            <option value="cm">Centímetros</option>
+            <option value="m">Metros</option>
+            <option value="km">Quilômetros</option>
+        </select><br>
+
+        <label for="valor">O valor a ser convertido será de: </label>
+        <input type="number" name="valor" id="valor" required><br><br>
+
+        <button type="submit">Calcular</button>
+    </form>
+    <!-- Espaço pois não sei dividir páginas -->
+    <br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br>
+
+
+    <h2 id="tempo">Tempo ⏳</h2>    
+    <p>Nesse campo é possível converter as unidades de medida da grandeza <strong>TEMPO</strong></p>
+    <a href="#top">Voltar ao topo!</a><br><br>
+
+    <!-- Formulário de tempo -->
+    <form action="sistema.php" method="post">
+
+        
+        <label for="tempo1">Vamos converter de </label>
+        <select name="tempo1" id="tempo1">
+            <option value="">Selecione uma unidade</option>
+            <option value="s">Segundos</option>
+            <option value="min">Minutos</option>
+            <option value="hr">Horas</option>
+        </select>
+        <label for="tempo"> para </label>
+        <select name="tempo2" id="tempo2">
+            <option value="">Selecione uma unidade</option>
+            <option value="s">Segundos</option>
+            <option value="min">Minutos</option>
+            <option value="hr">Horas</option>
+        </select><br>
+
+        <label for="valor">O valor a ser convertido será de: </label>
+        <input type="number" name="valor" id="valor" required><br><br>
+
+        <button type="submit">Calcular</button>
     </form>
 
+    <!-- Espaço pois não sei dividir páginas -->
+    <br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br>
+
+    <h2 id="massa">Massas ⚖️</h2>    
+    <p>Nesse campo é possível converter as unidades de medida da grandeza <strong>MASSA</strong></p>
+    <a href="#top">Voltar ao topo!</a><br><br>
+
+    <!-- Formulário de tempo -->
+    <form action="sistema.php" method="post">
+
+        
+        <label for="massa1">Vamos converter de </label>
+        <select name="massa1" id="massa1">
+            <option value="">Selecione uma unidade</option>
+            <option value="g">Gramas</option>
+            <option value="kg">Quilogramas</option>
+            <option value="t">Toneladas</option>
+        </select>
+        <label for="massa2"> para </label>
+        <select name="massa2" id="massa2">
+            <option value="">Selecione uma unidade</option>
+            <option value="g">Gramas</option>
+            <option value="kg">Quilogramas</option>
+            <option value="t">Toneladas</option>
+        </select><br>
+
+        <label for="valor">O valor a ser convertido será de: </label>
+        <input type="number" name="valor" id="valor" required><br><br>
+
+        <button type="submit">Calcular</button>
+    </form>
+
+    <!-- Espaço pois não sei dividir páginas -->
+    <br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br>
     
+    <h2 id="massa">Temperatura 🌡️</h2>    
+    <p>Nesse campo é possível converter as unidades de medida da grandeza <strong>TEMPERATURA</strong></p>
+    <a href="#top">Voltar ao topo!</a><br><br>
+
+    <!-- Formulário de tempo -->
+    <form action="sistema.php" method="post">
+
+        
+        <label for="termperatura1">Vamos converter de </label>
+        <select name="termperatura1" id="termperatura1">
+            <option value="">Selecione uma unidade</option>
+            <option value="g">Gramas</option>
+            <option value="kg">Quilogramas</option>
+            <option value="t">Toneladas</option>
+        </select>
+        <label for="termperatura2"> para </label>
+        <select name="termperatura2" id="termperatura2">
+            <option value="">Selecione uma unidade</option>
+            <option value="g">Gramas</option>
+            <option value="kg">Quilogramas</option>
+            <option value="t">Toneladas</option>
+        </select><br>
+
+        <label for="valor">O valor a ser convertido será de: </label>
+        <input type="number" name="valor" id="valor" required><br><br>
+
+        <button type="submit">Calcular</button>
+    </form>
+
 </body>
+
 </html>
