@@ -34,6 +34,7 @@
         $temperatura2 = $_POST['temperatura2'];
         $valor = $_POST['valor'];
 
+        // Parte de calculo do comprimento
         if ($comprimento1 === "m" && $comprimento2 === "cm") {
             $resultado = $valor * 100;
             echo "O valor convertido será de: $resultado $comprimento2";
@@ -53,6 +54,29 @@
             $resultado = $valor * 100000;
             echo "O valor convertido será de: $resultado $comprimento2";
         }if ($comprimento1 == $comprimento2){
+            echo "Não repita a unidade de medida! O valor será o mesmo";
+        }
+
+        // Parte do calculo do tempo
+        if($tempo1 == "s" && $tempo2 == "min"){
+            $resultado = $valor / 60;
+            echo "O valor convertido será de: $resultado $comprimento2";
+     } if($tempo1 == "s" && $tempo2 == "hr"){
+            $resultado = $valor / 3600;
+            echo "O valor convertido será de: $resultado $comprimento2";
+     }if($tempo1 == "min" && $tempo2 == "s"){
+            $resultado = $valor * 60;
+            echo "O valor convertido será de: $resultado $comprimento2";
+        } if($tempo1 == "min" && $tempo2 == "hr"){
+            $resultado = $valor / 60;
+            echo "O valor convertido será de: $resultado $comprimento2";
+        }if($tempo1 == "hr" && $tempo2 == "min"){
+            $resultado = $valor * 100000;
+            echo "O valor convertido será de: $resultado $comprimento2";
+        } if($tempo1 == "hr" && $tempo2 == "s"){
+                $resultado = $valor * 100000;
+            echo "O valor convertido será de: $resultado $comprimento2";
+        }if($tempo1 ==  $tempo2){
             echo "Não repita a unidade de medida! O valor será o mesmo";
         }
     }
