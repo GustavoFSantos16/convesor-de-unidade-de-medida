@@ -38,7 +38,7 @@
             $resultado = $valor * 100;
             echo "O valor convertido será de: $resultado $comprimento2";
         } if ($comprimento1 === "m" && $comprimento2 === "km") {
-            $resultado = $valor / 100;
+            $resultado = $valor / 1000;
             echo "O valor convertido será de: $resultado $comprimento2";
         } if ($comprimento1 === "cm" && $comprimento2 === "m") {
             $resultado = $valor / 100;
@@ -46,6 +46,14 @@
         } if ($comprimento1 === "cm" && $comprimento2 === "km") {
             $resultado = $valor * 100000;
             echo "O valor convertido será de: $resultado $comprimento2";
+        }if ($comprimento1 === "km" && $comprimento2 === "m") {
+            $resultado = $valor * 1000;
+            echo "O valor convertido será de: $resultado $comprimento2";
+        }if ($comprimento1 === "km" && $comprimento2 === "cm") {
+            $resultado = $valor * 100000;
+            echo "O valor convertido será de: $resultado $comprimento2";
+        }if ($comprimento1 == $comprimento2){
+            echo "Não repita a unidade de medida! O valor será o mesmo";
         }
     }
     ?>
